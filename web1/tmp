@@ -1,0 +1,109 @@
+general2\db\csv\csv_make\csv_make.go:4:	    "github.com/sawaq7/go14_ver1/storage2"
+general2\db\csv\csv_make\csv_make.go:90:     writer := storage2.File_Create2( w ,r ,bucket ,filename ,"text/plain" )
+general2\db\csv\csv_make\csv_make.go:91://     writer := storage2.File_Create2( w ,r ,bucket ,filename ,"text/csv" )
+general2\db\csv\csv_make\csv_make.go:182:      storage2.File_Write_Csv2 ( w  ,writer ,record )  //  write record with csv format
+general2\db\csv\csv_make\csv_make.go:183://      storage2.File_Write_Csv ( w  ,writer ,record )
+general2\db\csv\csv_show\csv_show.go:8:	    "github.com/sawaq7/go14_ver1/storage2/vaccine1"
+general2\db\csv\csv_show\csv_show.go:9:	    "github.com/sawaq7/go14_ver1/storage2"
+general2\db\csv\csv_show\csv_show.go:104:	objects :=  storage2.Object_List ( w  ,r , bucket )
+general2\db\csv\csv_show\csv_show.go:128:    reader_minor , _ := storage2.Storage_basic( "open" ,bucket ,filename , w , r  )
+general2\db\csv\csv_show_test1\csv_show_test1.go:9://	    "github.com/sawaq7/go14_ver1/storage2/get"
+general2\db\csv\csv_show_test1\csv_show_test1.go:10:	    "github.com/sawaq7/go14_ver1/storage2"
+general2\db\csv\csv_show_test1\csv_show_test1.go:103:	objects :=  storage2.Object_List ( w  ,r , bucket )
+general2\db\csv\csv_show_test1\csv_show_test1.go:128:    reader_minor , _ := storage2.Storage_basic( "open" ,bucket ,filename , w , r  )
+general2\db\storage\storage_bucket_list\storage_bucket_list.go:10:         "github.com/sawaq7/go14_ver1/storage2"
+general2\db\storage\storage_bucket_list\storage_bucket_list.go:42://	buckets_minor , _ := storage2.Storage_basic( "list" ,projectID ,sdmy, w , r  )
+general2\db\storage\storage_bucket_list\storage_bucket_list.go:49:	buckets :=  storage2.Bucket_List ( w  ,r , projectID )
+general2\db\storage\storage_bucket_list\storage_bucket_list.go:50://	buckets :=  storage2.Bucket_List2 ( w  ,r , client , projectID )
+general2\db\storage\storage_object_copy_excute\storage_object_copy_excute.go:5:	    "github.com/sawaq7/go14_ver1/storage2"
+general2\db\storage\storage_object_copy_excute\storage_object_copy_excute.go:84:    storage2.File_Copy ( w , r  ,bucket_name ,basic_file_name ,new_file_name  )
+general2\db\storage\storage_object_delete\storage_object_delete.go:11:	"github.com/sawaq7/go14_ver1/storage2"
+general2\db\storage\storage_object_delete\storage_object_delete.go:12://	"github.com/sawaq7/go14_ver1/storage2/get"
+general2\db\storage\storage_object_delete\storage_object_delete.go:89:	objects :=  storage2.Object_List ( w  ,r , bucket )
+general2\db\storage\storage_object_delete\storage_object_delete.go:103://	storage2.File_Delete ( w , r  ,bucket ,filename  )
+general2\db\storage\storage_object_delete\storage_object_delete.go:105:	storage2.Storage_basic( "delete" ,bucket ,filename , w , r  )
+general2\db\storage\storage_object_list\storage_object_list.go:10:        "github.com/sawaq7/go14_ver1/storage2"
+general2\db\storage\storage_object_list\storage_object_list.go:53:    buckets_minor , _ := storage2.Storage_basic( "list" ,projectID ,sdmy, w , r  )
+general2\db\storage\storage_object_list\storage_object_list.go:57://	buckets :=  storage2.Bucket_List ( w  ,r , projectID )
+general2\db\storage\storage_object_rename_excute\storage_object_rename_excute.go:5:	    "github.com/sawaq7/go14_ver1/storage2"
+general2\db\storage\storage_object_rename_excute\storage_object_rename_excute.go:81:    storage2.File_Rename ( w , r  ,bucket_name ,basic_file_name ,new_file_name  )
+general2\db\storage\storage_object_show\storage_object_show.go:8://	    "github.com/sawaq7/go14_ver1/storage2/get"
+general2\db\storage\storage_object_show\storage_object_show.go:9:	    "github.com/sawaq7/go14_ver1/storage2"
+general2\db\storage\storage_object_show\storage_object_show.go:83:	objects :=  storage2.Object_List ( w  ,r , bucket )
+general2\db\storage\storage_object_show\storage_object_show.go:101:    storage2.Storage_basic( "show1" ,bucket ,filename , w , r  )
+general2\db\storage\storage_object_upload\storage_object_upload.go:14:	    "github.com/sawaq7/go14_ver1/storage2"
+general2\db\storage\storage_object_upload\storage_object_upload.go:78:	w2_minor , _ := storage2.Storage_basic( "create" ,bucket ,fh.Filename , w , r  )
+general2\db\storage\storage_object_upload\storage_object_upload.go:82://	w2 := storage2.File_Create ( w ,r ,bucket  ,fh.Filename )
+reserve2\top\medical_record\medical_xray_delete\medical_xray_delete.go:8:	"github.com/sawaq7/go14_ver1/storage2"
+reserve2\top\medical_record\medical_xray_delete\medical_xray_delete.go:68:	storage2.File_Delete ( w , r  ,bucket ,guest_medical_xray.File_Name  )
+reserve2\top\medical_record\medical_xray_upload\medical_xray_upload.go:9:	    "github.com/sawaq7/go14_ver1/storage2"
+reserve2\top\medical_record\medical_xray_upload\medical_xray_upload.go:49://	st_writer_minor , _ := storage2.Storage_basic( "create" ,bucket ,fh.Filename , w , r  )
+reserve2\top\medical_record\medical_xray_upload\medical_xray_upload.go:55://    st_writer := storage2.File_Create ( w ,r ,bucket  ,f_name )
+reserve2\top\medical_record\medical_xray_upload\medical_xray_upload.go:61:    st_writer := storage2.File_Create2 ( w ,r ,bucket  ,f_name ,content_type )
+tokura2\top\hydrostatic_pressure\hydrostatic_pressure2\hydrostatic_pressure2.go:10:	    "github.com/sawaq7/go14_ver1/storage2"
+tokura2\top\hydrostatic_pressure\hydrostatic_pressure2\hydrostatic_pressure2.go:33://   reader  := storage2.File_Open(w ,r ,bucket ,fname)
+tokura2\top\hydrostatic_pressure\hydrostatic_pressure2\hydrostatic_pressure2.go:35:   reader_minor , _ := storage2.Storage_basic( "open" ,bucket ,fname , w , r  )
+tokura2\top\hydrostatic_pressure\hydrostatic_pressure2\hydrostatic_pressure2.go:47:   writer_minor , _ := storage2.Storage_basic( "create" ,bucket ,fname2 , w , r  )
+tokura2\top\hydrostatic_pressure\hydrostatic_pressure2\hydrostatic_pressure2.go:52://   writer := storage2.File_Create ( w ,r ,bucket ,fname2 )
+tokura2\top\hydrostatic_pressure\hydrostatic_pressure2\hydrostatic_pressure2.go:102://         storage2.File_Write ( w ,bucket ,fname2 ,writer ,ad_fdata )
+tokura2\top\hydrostatic_pressure\hydrostatic_pressure2\hydrostatic_pressure2.go:103:         storage2.File_write ( w ,writer ,ad_fdata )
+tokura2\top\pipe_line\pipe_line1\pipe_line1_delete\pipe_line1_delete.go:17:	     "github.com/sawaq7/go14_ver1/storage2"
+tokura2\top\pipe_line\pipe_line1\pipe_line1_delete\pipe_line1_delete.go:49:    storage2.File_Rename ( w ,r ,bucket ,filename1 ,filename2 )
+tokura2\top\pipe_line\pipe_line1\pipe_line1_delete\pipe_line1_delete.go:53://    reader := storage2.File_Open(w ,r ,bucket ,filename2)
+tokura2\top\pipe_line\pipe_line1\pipe_line1_delete\pipe_line1_delete.go:55:    reader_minor , _ := storage2.Storage_basic( "open" ,bucket ,filename2 , w , r  )
+tokura2\top\pipe_line\pipe_line1\pipe_line1_delete\pipe_line1_delete.go:67:    writer_minor , _ := storage2.Storage_basic( "create" ,bucket ,filename1 , w , r  )
+tokura2\top\pipe_line\pipe_line1\pipe_line1_delete\pipe_line1_delete.go:71://    writer := storage2.File_Create( w ,r ,bucket ,filename1 )
+tokura2\top\pipe_line\pipe_line1\pipe_line1_delete\pipe_line1_delete.go:97:          storage2.File_write ( w ,writer ,str )
+tokura2\top\pipe_line\pipe_line1\pipe_line1_delete\pipe_line1_delete.go:131:   storage2.Storage_basic( "delete" ,bucket ,filename2 , w , r  )
+tokura2\top\pipe_line\pipe_line1\pipe_line1_delete\pipe_line1_delete.go:133://   storage2.File_Delete ( w , r ,bucket ,filename2 )
+tokura2\top\pipe_line\pipe_line1\pipe_line1_excute_all\pipe_line1_excute_all.go:16:	      "github.com/sawaq7/go14_ver1/storage2"
+tokura2\top\pipe_line\pipe_line1\pipe_line1_excute_all\pipe_line1_excute_all.go:32:    writer_minor , _ := storage2.Storage_basic( "create" ,bucket ,filename2 , w , r  )
+tokura2\top\pipe_line\pipe_line1\pipe_line1_excute_all\pipe_line1_excute_all.go:36://	writer := storage2.File_Create( w ,r ,bucket ,filename2 )
+tokura2\top\pipe_line\pipe_line1\pipe_line1_excute_all\pipe_line1_excute_all.go:42:    reader_minor , _ := storage2.Storage_basic( "open" ,bucket ,filename1 , w , r  )
+tokura2\top\pipe_line\pipe_line1\pipe_line1_excute_all\pipe_line1_excute_all.go:46://    reader := storage2.File_Open(w ,r ,bucket ,filename1)
+tokura2\top\pipe_line\pipe_line1\pipe_line1_excute_all\pipe_line1_excute_all.go:96://                 storage2.File_Write ( w ,bucket ,filename2 ,writer ,ad_hp )
+tokura2\top\pipe_line\pipe_line1\pipe_line1_excute_all\pipe_line1_excute_all.go:97:                 storage2.File_write ( w ,writer ,ad_hp )
+tokura2\top\pipe_line\pipe_line1\pipe_line1_excute_all\pipe_line1_excute_all.go:101://                 storage2.File_Write ( w ,bucket ,filename2 ,writer ,ad_hl )
+tokura2\top\pipe_line\pipe_line1\pipe_line1_excute_all\pipe_line1_excute_all.go:102:                 storage2.File_write ( w ,writer ,ad_hl )
+tokura2\top\pipe_line\pipe_line1\pipe_line1_excute_all\pipe_line1_excute_all.go:106://                 storage2.File_Write ( w ,bucket ,filename2 ,writer ,ad_vhead )
+tokura2\top\pipe_line\pipe_line1\pipe_line1_excute_all\pipe_line1_excute_all.go:107:                 storage2.File_write ( w ,writer ,ad_vhead )
+tokura2\top\pipe_line\pipe_line1\pipe_line1_excute_all\pipe_line1_excute_all.go:111://                 storage2.File_Write ( w ,bucket ,filename2 ,writer ,ad_eneup )
+tokura2\top\pipe_line\pipe_line1\pipe_line1_excute_all\pipe_line1_excute_all.go:112:                 storage2.File_write ( w ,writer ,ad_eneup )
+tokura2\top\pipe_line\pipe_line1\pipe_line1_excute_all\pipe_line1_excute_all.go:116://                 storage2.File_Write ( w ,bucket ,filename2 ,writer ,ad_enedown )
+tokura2\top\pipe_line\pipe_line1\pipe_line1_excute_all\pipe_line1_excute_all.go:117:                 storage2.File_write ( w ,writer ,ad_enedown )
+tokura2\top\pipe_line\pipe_line1\pipe_line1_excute_all\pipe_line1_excute_all.go:121://                 storage2.File_Write ( w ,bucket ,filename2 ,writer ,ad_glineup )
+tokura2\top\pipe_line\pipe_line1\pipe_line1_excute_all\pipe_line1_excute_all.go:122:                 storage2.File_write ( w ,writer ,ad_glineup )
+tokura2\top\pipe_line\pipe_line1\pipe_line1_excute_all\pipe_line1_excute_all.go:126://                 storage2.File_Write ( w ,bucket ,filename2 ,writer ,ad_glinedown )
+tokura2\top\pipe_line\pipe_line1\pipe_line1_excute_all\pipe_line1_excute_all.go:127:                 storage2.File_write ( w ,writer ,ad_glinedown )
+tokura2\top\pipe_line\pipe_line1\pipe_line1_excute_single\pipe_line1_excute_single.go:16:	      "github.com/sawaq7/go14_ver1/storage2"
+tokura2\top\pipe_line\pipe_line1\pipe_line1_excute_single\pipe_line1_excute_single.go:45:    writer_minor , _ := storage2.Storage_basic( "create" ,bucket ,filename2 , w , r  )
+tokura2\top\pipe_line\pipe_line1\pipe_line1_excute_single\pipe_line1_excute_single.go:49://    writer := storage2.File_Create( w ,r ,bucket ,filename2 )
+tokura2\top\pipe_line\pipe_line1\pipe_line1_excute_single\pipe_line1_excute_single.go:55://    reader := storage2.File_Open(w ,r ,bucket ,filename1)
+tokura2\top\pipe_line\pipe_line1\pipe_line1_excute_single\pipe_line1_excute_single.go:57:    reader_minor , _ := storage2.Storage_basic( "open" ,bucket ,filename1 , w , r  )
+tokura2\top\pipe_line\pipe_line1\pipe_line1_excute_single\pipe_line1_excute_single.go:110://               storage2.File_Write ( w ,bucket ,filename2 ,writer ,ad_hp )
+tokura2\top\pipe_line\pipe_line1\pipe_line1_excute_single\pipe_line1_excute_single.go:111:               storage2.File_write ( w ,writer ,ad_hp )
+tokura2\top\pipe_line\pipe_line1\pipe_line1_excute_single\pipe_line1_excute_single.go:115://               storage2.File_Write ( w ,bucket ,filename2 ,writer ,ad_hl )
+tokura2\top\pipe_line\pipe_line1\pipe_line1_excute_single\pipe_line1_excute_single.go:116:               storage2.File_write ( w ,writer ,ad_hl )
+tokura2\top\pipe_line\pipe_line1\pipe_line1_excute_single\pipe_line1_excute_single.go:120://               storage2.File_Write ( w ,bucket ,filename2 ,writer ,ad_vhead )
+tokura2\top\pipe_line\pipe_line1\pipe_line1_excute_single\pipe_line1_excute_single.go:121:               storage2.File_write ( w ,writer ,ad_vhead )
+tokura2\top\pipe_line\pipe_line1\pipe_line1_excute_single\pipe_line1_excute_single.go:125://               storage2.File_Write ( w ,bucket ,filename2 ,writer ,ad_eneup )
+tokura2\top\pipe_line\pipe_line1\pipe_line1_excute_single\pipe_line1_excute_single.go:126:               storage2.File_write ( w ,writer ,ad_eneup )
+tokura2\top\pipe_line\pipe_line1\pipe_line1_excute_single\pipe_line1_excute_single.go:130://               storage2.File_Write ( w ,bucket ,filename2 ,writer ,ad_enedown )
+tokura2\top\pipe_line\pipe_line1\pipe_line1_excute_single\pipe_line1_excute_single.go:131:               storage2.File_write ( w ,writer ,ad_enedown )
+tokura2\top\pipe_line\pipe_line1\pipe_line1_excute_single\pipe_line1_excute_single.go:135://               storage2.File_Write ( w ,bucket ,filename2 ,writer ,ad_glineup )
+tokura2\top\pipe_line\pipe_line1\pipe_line1_excute_single\pipe_line1_excute_single.go:136:               storage2.File_write ( w ,writer ,ad_glineup )
+tokura2\top\pipe_line\pipe_line1\pipe_line1_excute_single\pipe_line1_excute_single.go:140://               storage2.File_Write ( w ,bucket ,filename2 ,writer ,ad_glinedown )
+tokura2\top\pipe_line\pipe_line1\pipe_line1_excute_single\pipe_line1_excute_single.go:141:               storage2.File_write ( w ,writer ,ad_glinedown )
+tokura2\top\pipe_line\pipe_line1\pipe_line1_show\pipe_line1_show.go:12:	     "github.com/sawaq7/go14_ver1/storage2"
+tokura2\top\pipe_line\pipe_line1\pipe_line1_show\pipe_line1_show.go:32://	reader  := storage2.File_Open(w ,r ,bucket ,filename1)
+tokura2\top\pipe_line\pipe_line1\pipe_line1_show\pipe_line1_show.go:34:	reader_minor , _ := storage2.Storage_basic( "open" ,bucket ,filename1 , w , r  )
+tokura2\top\pipe_line\pipe_line_st\pipe_line_st_show\pipe_line_st_show.go:11:	    "github.com/sawaq7/go14_ver1/storage2"
+tokura2\top\pipe_line\pipe_line_st\pipe_line_st_show\pipe_line_st_show.go:49:    objects_minor , _ := storage2.Storage_basic( "list2" ,bucket ,idmy, w , r  )
+tokura2\top\pipe_line\pipe_line_st\pipe_line_st_show\pipe_line_st_show.go:53://    objects :=  storage2.Object_List ( w  ,r , bucket )
+tokura2\top\pipe_line\pipe_line_st\pipe_line_st_update\pipe_line_st_update.go:11://	    "storage2"
+tokura2\top\pipe_line\pipe_line_st\pipe_line_st_wl_keyin\pipe_line_st_wl_keyin.go:9:	    "github.com/sawaq7/go14_ver1/storage2"
+tokura2\top\pipe_line\pipe_line_st\pipe_line_st_wl_keyin\pipe_line_st_wl_keyin.go:57:    reader_minor , _ := storage2.Storage_basic( "open" ,bucket ,filename1 , w , r  )
+tokura2\top\pipe_line\water_slope\water_slope_delete\water_slope_delete.go:10:	"github.com/sawaq7/go14_ver1/storage2"
+tokura2\top\pipe_line\water_slope\water_slope_delete\water_slope_delete.go:79:	storage2.File_Delete ( w , r  ,bucket_name ,file_name  )
+tokura2\top\pipe_line\water_slope\water_slope_graf\water_slope_graf.go:10:	    "github.com/sawaq7/go14_ver1/storage2"
+tokura2\top\pipe_line\water_slope\water_slope_graf\water_slope_graf.go:71:    storage2.Storage_basic( "show2" ,image_show ,idmy , w , r  )
